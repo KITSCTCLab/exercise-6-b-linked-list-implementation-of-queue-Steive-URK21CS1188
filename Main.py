@@ -25,7 +25,7 @@ class Queue:
   def dequeue(self) -> None:
     # Write your code here
     t=self.head
-    if self.front==None:
+    if self.head==None:
       return None
     else:
       if t.next!=None:
@@ -39,7 +39,7 @@ class Queue:
   def status(self) -> None:
     # Write your code here
     t=self.head
-    if self.front==None and self.last==None:
+    if self.head==None and self.last==None:
       print("None")
     while(t!=None):
       print(t.data,end="")
