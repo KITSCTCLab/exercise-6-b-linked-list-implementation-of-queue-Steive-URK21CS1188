@@ -31,12 +31,12 @@ class Queue:
       if t.next!=None:
         t=t.next
         return self.head.data
-        delete(self.head.data)
+        del(self.head.data)
         self.head=t
         
       else:
         return self.head.data
-        delete(self.head.data)
+        del(self.head.data)
         self.head=None
         self.last=None
   def status(self) -> None:
