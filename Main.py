@@ -29,9 +29,8 @@ class Queue:
       return 
     else:
       if t.next!=None:
-        t=t.next
         return self.head.data
-        self.head=t
+        self.head=t.next
       else:
         return self.head.data
         self.head=None
