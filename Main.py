@@ -29,15 +29,10 @@ class Queue:
       return 
     else:
       if t.next!=None:
-        x=self.head.data
-        self.head=None
         t=t.next
-        return x
+        return self.head.data
         self.head=t
-        
       else:
-        x=self.head.data
-        self.head=None
         return self.head.data
         self.head=None
         self.last=None
