@@ -26,7 +26,7 @@ class Queue:
     # Write your code here
     t=self.head
     if self.head==None:
-      return None
+      return 
     else:
       if t.next!=None:
         t=t.next
@@ -48,8 +48,8 @@ class Queue:
       print(t.data,end="")
       print("=>",end="")
       t=t.next
-    if t==None:
-      print("None")
+      if t==None:
+        print("None")
 
 # Do not change the following code
 queue = Queue()
