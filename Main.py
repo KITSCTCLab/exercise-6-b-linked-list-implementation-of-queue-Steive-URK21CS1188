@@ -26,15 +26,10 @@ class Queue:
     # Write your code here
     t=self.head
     if self.head==None:
-      return 
-    else:
-      if t.next!=None:
-        return self.head.data
-        self.head=t.next
-      else:
-        return self.head.data
-        self.head=None
-        self.last=None
+      return None
+    self.head = t.next
+    if(self.head == None):
+      self.last = None
   def status(self) -> None:
     # Write your code here
     t=self.head
